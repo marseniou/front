@@ -5,12 +5,9 @@
     <x-hero btn_text="View Events" :has_btn="true" :has_image="true"
         image="https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp" link="#">
     </x-hero>
-    <!-- Grid attributes 
-     'color', 'gap', 'cols'
-      -->
-    <x-grids>
+
+    <x-grids color="bg-slate-900">
         <div>1</div>
         <div>2</div>
-        <div>3</div>
     </x-grids>
 </x-layouts.main>
