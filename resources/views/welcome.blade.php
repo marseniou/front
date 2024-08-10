@@ -9,5 +9,7 @@
     <x-grids color="bg-slate-900">
         <div>1</div>
         <div>2</div>
+        <div>3</div>
+        
     </x-grids>
 </x-layouts.main>
