@@ -1,10 +1,10 @@
 <x-layouts.main>
-    <!-- Centered hero attributes
+    <!-- hero attributes
  'title', 'description', 'btn_text', 'has_btn', 'has_image', 'image', 'link', 
   -->
-    <x-centered-hero btn_text="View Events" :has_btn="true" :has_image="true"
+    <x-hero btn_text="View Events" :has_btn="true" :has_image="true"
         image="https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp" link="#">
-    </x-centered-hero>
+    </x-hero>
     <!-- Grid attributes 
      'color', 'gap', 'cols'
       -->

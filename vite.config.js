@@ -10,7 +10,7 @@ export default defineConfig({
     ],
     server: { 
         hmr: {
-            host: 'front.test',
+            host: 'blog.test',
         },
     },
 });
