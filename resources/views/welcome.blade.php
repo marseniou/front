@@ -6,7 +6,7 @@
         image="https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp" link="#">
     </x-hero>
 
-    <x-grids color="bg-slate-900">
+    <x-grids color="bg-slate-900" class="text-center">
         <div>1</div>
         <div>2</div>
         <div>3</div>
