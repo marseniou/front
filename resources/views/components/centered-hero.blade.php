@@ -1,4 +1,4 @@
-@props(['title', 'description', 'btn_text', 'has_btn', 'has_image', 'image'])
+@props(['title'=>'Hello', 'description'=>'Lorem Ipsum', 'btn_text'=>'Start', 'has_btn'=>true, 'has_image'=>false, 'image', 'link'=>'#'])
 <div class="hero min-h-screen" @if ($has_image) style="background-image: url({{$image}});" @endif>
   @if ($has_image)
     <div class="hero-overlay bg-opacity-60"></div>
@@ -10,8 +10,8 @@
         {{$description}}
       </p>
       @if($has_btn)
-      <button class="btn btn-primary">{{$btn_text}}</button>
-    @endif
+      <a href="{{$link}}" class="btn btn-primary">{{$btn_text}}</a>
+      @endif
     </div>
   </div>
 </div>
