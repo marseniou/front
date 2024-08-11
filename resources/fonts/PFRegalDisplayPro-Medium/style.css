@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: local('PF Regal Display Pro Medium'), local('PF-Regal-Display-Pro-Medium'),
+        url('PFRegalDisplayPro-Medium.woff2') format('woff2'),
+        url('PFRegalDisplayPro-Medium.woff') format('woff'),
+        url('PFRegalDisplayPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }

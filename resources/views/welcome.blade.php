@@ -2,11 +2,11 @@
     <!-- hero attributes
  'title', 'description', 'btn_text', 'has_btn', 'has_image', 'image', 'link', 
   -->
-    <x-hero btn_text="View Events" :has_btn="true" :has_image="true"
-        image="https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp" link="#">
+    <x-hero btn_text="Upcoming Concerts" :has_btn="true" :has_image="true" title="Ορχήστρα Δωματίου Αλεξανδρούπολης"
+        image="{{URL::to('/')}}/images/front.jpg" link="/concerts">
     </x-hero>
 
-    <x-grids color="bg-slate-900" class="text-center">
+    <x-grids color="bg-primary text-neutral" class="text-center">
         <div>1</div>
         <div>2</div>
         <div>3</div>

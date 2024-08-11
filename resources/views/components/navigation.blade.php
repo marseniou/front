@@ -1,5 +1,5 @@
 
-<nav class="sticky top-0 flex flex-col md:flex-row p-5 z-50 border-b-2 border-black bg-sky-100" >
+<nav class="sticky top-0 flex flex-col md:flex-row p-5 z-50 border-b-2 border-white bg-neutral" >
     <div class="flex flex-wrap justify-between items-center">
         <div>
             <img src="{{URL::to('/')}}/logo.svg" width="64" alt="logo"></img>
@@ -17,8 +17,8 @@
             </a>
         </li>
         <li>
-            <a href="/events" class="block p-5 hover:bg-slate-300 hover:underline">
-                Events
+            <a href="/concerts" class="block p-5 hover:bg-slate-300 hover:underline">
+                Concerts
             </a>
         </li>
         <li>
@@ -37,7 +37,7 @@
             </a>
         </li>
         <li>
-            <a href="#" class="block p-5 bg-red-500 text-white hover:bg-red-900 hover:underline">
+            <a href="#" class="block p-5 bg-primary text-white hover:opacity-80 hover:underline">
                 Donate
             </a>
         </li>

@@ -5,6 +5,7 @@ namespace App\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -37,5 +38,16 @@ class Post extends Model
         return Attribute::make(
             get: fn (string $value) => Carbon::parse($value)->format('d M Y'),
         );
+    }
+      /**
+     * Scope a query to only include active users.
+     */
+    public function scopeActive(Builder $query): void
+    {
+        $query->where('active', 1);
+    }
+    public function scopePublishedAt(Builder $query): void
+    {
+        $query->where('published_at','<=', Carbon::now());
     }
 }

@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: local('../fonts/PFRegalDisplayPro-Medium'), local('../fonts/PF-Regal-Display-Pro-Medium'),
+        url('../fonts/PFRegalDisplayPro-Medium.woff2') format('woff2'),
+        url('../fonts/PFRegalDisplayPro-Medium.woff') format('woff'),
+        url('../fonts/PFRegalDisplayPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+.display{
+    font-family: 'PF Regal Display Pro Medium', Georgia, "Times New Roman", Times, Serif;
+}
