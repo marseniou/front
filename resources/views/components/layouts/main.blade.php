@@ -9,7 +9,7 @@
     @vite('resources/js/app.js')
 </head>
 
-<body>
+<body class="bg-base-100">
     <x-navigation></x-navigation>
     {{$slot}}
 </body>

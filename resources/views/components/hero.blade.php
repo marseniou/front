@@ -6,7 +6,8 @@
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-md">
       <h1 class="mb-5 text-5xl font-bold display">{{$title}}</h1>
-      <p class="mb-5">
+      <hr class="border-primary pb-4">
+      <p class="mb-5 text-lg">
         {{$description}}
       </p>
       @if($has_btn)

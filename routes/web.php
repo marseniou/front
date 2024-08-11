@@ -3,13 +3,15 @@
 use Carbon\Carbon;
 use App\Models\Post;
 use App\Models\Concert;
+use App\Models\Musician;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    $musicians = Musician::active()->get();
+    return view('welcome', compact('musicians'));
 });
 Route::get('/blog', function(){
-    $posts = Post::publishedAt()->active()->get();
+    $posts = Post::publishedAt()->active()->limit(3)->get();
     return view('blog', compact('posts'));
 });
 Route::get('/concerts', function(){
